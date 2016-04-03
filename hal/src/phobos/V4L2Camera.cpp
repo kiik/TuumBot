@@ -23,7 +23,7 @@
 #include "V4L2Camera.hpp"       // The class header
 
 
-namespace rtx {
+namespace rtx { namespace hal {
 
   // Macro to set the memory of a variable to zero
   #define CLEAR(x) memset(&(x), 0, sizeof(x))
@@ -447,4 +447,4 @@ namespace rtx {
     }
   }
 
-};
+}};

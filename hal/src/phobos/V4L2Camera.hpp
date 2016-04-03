@@ -18,8 +18,18 @@
 #include "cameraConstants.hpp"    // Camera constants
 #include "tuum_platform.hpp"
 
-
 namespace rtx {
+
+  struct Frame {
+    unsigned char   *data;
+    size_t          width;
+    size_t          height;
+    size_t          size;     // width * height * 3
+  };
+
+}
+
+namespace rtx { namespace hal {
 
   /**
     Camera image buffer structure.
@@ -27,13 +37,6 @@ namespace rtx {
   struct buffer {
     void *data;
     size_t size;
-  };
-
-  struct Frame {
-    unsigned char   *data;
-    size_t          width;
-    size_t          height;
-    size_t          size;     // width * height * 3
   };
 
   Frame toRGB(const Frame&);
@@ -192,6 +195,6 @@ namespace rtx {
 
   };
 
-};
+}};
 
 #endif // RTX_V4L2_CAMERA_H

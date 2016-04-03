@@ -10,6 +10,10 @@ ifeq ("$(PLATFORM)","phobos")
 PLATFORM_ID = 0
 endif
 
+ifeq ("$(PLATFORM)","deimos")
+PLATFORM_ID = 1
+endif
+
 ifeq (,$(PLATFORM_ID))
 $(error "Unknown platform: $(PLATFORM))
 endif
@@ -28,5 +32,12 @@ ifeq ("$(PLATFORM_ID)","0")
 PLATFORM=phobos
 PLATFORM_NAME=phobos
 PRODUCT_DESC=Tuum Phobos (NUC) Robot
+DEFAULT_PRODUCT_ID=0
+endif
+
+ifeq ("$(PLATFORM_ID)","1")
+PLATFORM=deimos
+PLATFORM_NAME=deimos
+PRODUCT_DESC=Tuum Deimos Robot
 DEFAULT_PRODUCT_ID=0
 endif

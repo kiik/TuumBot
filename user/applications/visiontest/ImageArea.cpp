@@ -22,6 +22,7 @@
 
 #include <iostream> // TODO: Remove
 
+using namespace rtx::hal;
 
 namespace rtx {
 
