@@ -9,6 +9,11 @@
 #ifndef RTX_LOC_H
 #define RTX_LOC_H
 
-#include "wizard.hpp"
+namespace rtx { namespace gui {
+
+  int run(int, char*[]);
+
+}}
+
 
 #endif

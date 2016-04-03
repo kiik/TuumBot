@@ -19,7 +19,7 @@
 #include "tuum_localization.hpp"
 #include "mathematicalConstants.hpp"
 
-using namespace rtx;
+using namespace rtx::hal;
 
 namespace rtx { namespace Visioning {
 

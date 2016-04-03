@@ -15,9 +15,7 @@ CPPSRC += $(call target_files,src/,*.cpp)
 # ASM source files included in this build.
 ASRC +=
 
-CPPFLAGS += -std=gnu++11 -fPIC
+CPPFLAGS += -std=gnu++11
 
 BUILTINS_EXCLUDE =
 CFLAGS += $(addprefix -fno-builtin-,$(BUILTINS_EXCLUDE))
-
-INCLUDE_DIRS += /usr/include/x86_64-linux-gnu/qt5 /usr/include/x86_64-linux-gnu/qt5/QtWidgets /usr/include/x86_64-linux-gnu/qt5/QtGui /usr/include/x86_64-linux-gnu/qt5/QtCore /usr/lib/x86_64-linux-gnu/qt5/mkspecs/linux-g++-64

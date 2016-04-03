@@ -23,7 +23,8 @@ void sys_main() {
 int main(int argc, char *argv[]) {
   rtx::init(argc, argv);
   sys_init();
-  boost::thread workerThread(sys_main);
+
+  //boost::thread workerThread(sys_main);
 
   return rtx::gui::run(argc, argv);
 }
