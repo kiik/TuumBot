@@ -19,6 +19,7 @@
 
 #include "MainWindow.hpp"
 
+using namespace rtx::hal;
 
 namespace rtx {
 
